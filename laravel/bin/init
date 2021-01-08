@@ -5,7 +5,7 @@ cp .env.example $FILE
 sed -i "s/DB_CONNECTION=.*/DB_CONNECTION=\"sqlite\"/" $FILE
 sed -i "s/DB_DATABASE=\(.*\)/# DB_DATABASE=\1/" $FILE
 
-sed -i "s/\"apiUrl\": \(.*\)/\"apiUrl\": \"http:\/\/localhost:8000\/api\/v1\"/" cypress.json
+sed -i "s/\"apiUrl\": \(.*\)/\"apiUrl\": \"http:\/\/localhost:8000\/api\/v1\"/" ../cypress.json
 
 touch database/database.sqlite
 
