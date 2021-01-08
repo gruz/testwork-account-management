@@ -2,7 +2,7 @@
   "name": "account-management-backend-level-3",
   "version": "0.0.1",
   "scripts": {
-    "build": "cd laravel && bin/init",
+    "build": "sudo apt-get install php-sqlite3 -y && cd laravel && touch database/database.sqlite && composer install",
     "start": "cd laravel && php artisan migrate && php artisan serve",
     "refresh": "cd laravel && php artisan migrate:refresh",
     "test": "cd laravel && php artisan migrate:refresh && cd ..; cypress run"
