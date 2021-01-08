@@ -1,5 +1,5 @@
 #!/bin/bash
-# set -xe;
+set -xe;
 FILE='.env'
 cp .env.example $FILE
 sed -i "s/DB_CONNECTION=.*/DB_CONNECTION=\"sqlite\"/" $FILE
