@@ -2,7 +2,7 @@
   "name": "account-management-backend-level-3",
   "version": "0.0.1",
   "scripts": {
-    "build": "yarn install; cd laravel; bin/init",
+    "build": "cd laravel; bin/init",
     "start": "cd laravel; php artisan serve",
     "test": "cd laravel; php artisan migrate:refresh; cd ..; cypress run"
   },
