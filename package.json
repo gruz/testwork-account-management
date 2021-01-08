@@ -2,9 +2,10 @@
   "name": "account-management-backend-level-3",
   "version": "0.0.1",
   "scripts": {
-    "build": "cd laravel; bin/init",
-    "start": "cd laravel; php artisan serve",
-    "test": "cd laravel; php artisan migrate:refresh; cd ..; cypress run"
+    "build": "cd laravel && bin/init",
+    "start": "cd laravel && php artisan migrate && php artisan serve",
+    "refresh": "cd laravel && php artisan migrate:refresh",
+    "test": "cd laravel && php artisan migrate:refresh && cd ..; cypress run"
   },
   "devDependencies": {
     "cypress": "^5.4.0"
